@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EThreeError Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/EThreeError" class="dashAnchor"></a>
+    <a title="EThreeError Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">VirgilE3Kit Docs</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">VirgilE3Kit Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        EThreeError Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/EThree.html">EThree</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/EThreeError.html">EThreeError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>EThreeError</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@objc(VTEEThreeError)</span>
+<span class="kd">public</span> <span class="kd">enum</span> <span class="kt">EThreeError</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="kt">LocalizedError</span></code></pre>
+
+                </div>
+              </div>
+            <p>Declares error types and codes for EThree</p>
+
+<ul>
+<li>verifierInitFailed: Initialization of VirgilCardVerifier failed</li>
+<li>keyIsNotVirgil: Casting Key to Virgil Key failed</li>
+<li>strToDataFailed: String to Data failed</li>
+<li>strFromDataFailed: Data to String failed</li>
+<li>missingPrivateKey: No private key on device. You should call <code>register()</code> of <code>retrievePrivateKey()</code></li>
+<li>missingPublicKey: Passed empty LookupResult</li>
+<li>missingIdentities: Passed empty array of identities to lookup for</li>
+<li>userIsAlreadyRegistered: User is already registered</li>
+<li>userIsNotRegistered: User is not registered</li>
+<li>privateKeyExists: Private key already exists in local key storage</li>
+</ul>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorVerifierInitFailed"></a>
+                    <a name="//apple_ref/swift/Element/verifierInitFailed" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorVerifierInitFailed">verifierInitFailed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">verifierInitFailed</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorStrToDataFailed"></a>
+                    <a name="//apple_ref/swift/Element/strToDataFailed" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorStrToDataFailed">strToDataFailed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">strToDataFailed</span> <span class="o">=</span> <span class="mi">3</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorStrFromDataFailed"></a>
+                    <a name="//apple_ref/swift/Element/strFromDataFailed" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorStrFromDataFailed">strFromDataFailed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">strFromDataFailed</span> <span class="o">=</span> <span class="mi">4</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorMissingPrivateKey"></a>
+                    <a name="//apple_ref/swift/Element/missingPrivateKey" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorMissingPrivateKey">missingPrivateKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">missingPrivateKey</span> <span class="o">=</span> <span class="mi">5</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorMissingPublicKey"></a>
+                    <a name="//apple_ref/swift/Element/missingPublicKey" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorMissingPublicKey">missingPublicKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">missingPublicKey</span> <span class="o">=</span> <span class="mi">6</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorMissingIdentities"></a>
+                    <a name="//apple_ref/swift/Element/missingIdentities" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorMissingIdentities">missingIdentities</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">missingIdentities</span> <span class="o">=</span> <span class="mi">7</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorUserIsAlreadyRegistered"></a>
+                    <a name="//apple_ref/swift/Element/userIsAlreadyRegistered" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorUserIsAlreadyRegistered">userIsAlreadyRegistered</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">userIsAlreadyRegistered</span> <span class="o">=</span> <span class="mi">8</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorUserIsNotRegistered"></a>
+                    <a name="//apple_ref/swift/Element/userIsNotRegistered" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorUserIsNotRegistered">userIsNotRegistered</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">userIsNotRegistered</span> <span class="o">=</span> <span class="mi">9</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorPrivateKeyExists"></a>
+                    <a name="//apple_ref/swift/Element/privateKeyExists" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorPrivateKeyExists">privateKeyExists</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">privateKeyExists</span> <span class="o">=</span> <span class="mi">10</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorDuplicateCards"></a>
+                    <a name="//apple_ref/swift/Element/duplicateCards" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEThreeError@VTEEThreeErrorDuplicateCards">duplicateCards</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">duplicateCards</span> <span class="o">=</span> <span class="mi">11</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11VirgilE3Kit11EThreeErrorO16errorDescriptionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/errorDescription" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11VirgilE3Kit11EThreeErrorO16errorDescriptionSSSgvp">errorDescription</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Human-readable localized description</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">errorDescription</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://virgilsecurity.com/" target="_blank" rel="external">Virgil Security</a>. All rights reserved. (Last updated: 2019-07-10)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.10.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

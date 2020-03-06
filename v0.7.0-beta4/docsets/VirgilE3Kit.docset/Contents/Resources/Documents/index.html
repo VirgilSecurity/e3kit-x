@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VirgilE3Kit  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="VirgilE3Kit  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">VirgilE3Kit Docs</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">VirgilE3Kit Reference</a>
+        <img id="carat" src="img/carat.png" />
+        VirgilE3Kit  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/EThree.html">EThree</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Group.html">Group</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SQLiteError.html">SQLiteError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/EThreeError.html">EThreeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FileGroupStorageError.html">FileGroupStorageError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FindUsersError.html">FindUsersError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/GroupError.html">GroupError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/RawGroupError.html">RawGroupError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SQLiteBindingError.html">SQLiteBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SQLiteCardStorageError.html">SQLiteCardStorageError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/ChangedKeyDelegate.html">ChangedKeyDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:11VirgilE3Kit15FindUsersResulta">FindUsersResult</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='virgil-e3kit-objective-c-swift' class='heading'>Virgil E3Kit Objective-C/Swift</h1>
+
+<p><a href="https://travis-ci.com/VirgilSecurity/virgil-e3kit-x"><img src="https://api.travis-ci.com/VirgilSecurity/virgil-e3kit-x.svg?branch=master" alt="Build Status"></a>
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a>
+<a href="https://cocoapods.org/pods/VirgilE3Kit"><img src="https://img.shields.io/cocoapods/v/VirgilE3Kit.svg" alt="CocoaPods Compatible"></a>
+<a href="https://cocoapods.org/pods/VirgilE3Kit"><img src="https://img.shields.io/cocoapods/p/VirgilE3Kit.svg?style=flat" alt="Platform"></a>
+<a href="https://github.com/VirgilSecurity/virgil/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-BSD%203--Clause-blue.svg" alt="GitHub license"></a></p>
+
+<p><a href="#introduction">Introduction</a> | <a href="#features">Features</a> | <a href="#installation">Installation</a> | <a href="#usage-examples">Usage Examples</a> | <a href="#enable-group-chat">Enable Group Chat</a> | <a href="#samples">Samples</a> | <a href="#license">License</a> | <a href="#docs">Docs</a> | <a href="#support">Support</a></p>
+<h2 id='introduction' class='heading'>Introduction</h2>
+
+<p><a href="https://developer.virgilsecurity.com/docs"><img width="230px" src="https://cdn.virgilsecurity.com/assets/images/github/logos/virgil-logo-red.png" align="left" hspace="10" vspace="6"></a> <a href="https://virgilsecurity.com">Virgil Security</a> provides the E3Kit which simplifies work with Virgil Cloud and presents an easy-to-use API for adding a security layer to any application. In a few simple steps you can add end-to-end encryption with multidevice and group chats support.</p>
+
+<p>The E3Kit allows developers to get up and running with Virgil API quickly and add full end-to-end security to their existing digital solutions to become HIPAA and GDPR compliant and more.</p>
+<h2 id='features' class='heading'>Features</h2>
+
+<ul>
+<li>Strong end-to-end encryption with authorization</li>
+<li>One-to-one and group encryption</li>
+<li>Files and stream encryption</li>
+<li>Recovery features for secret keys</li>
+<li>Strong secret keys storage, integration with Keychain</li>
+<li>Integration with any CPaaS providers like Nexmo, Firebase, Twilio, PubNub, etc.</li>
+<li>Public keys cache features</li>
+<li>Access encrypted data from multiple user devices</li>
+<li>Easy setup and integration into new or existing projects</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>Virgil E3Kit is provided as a set of frameworks. These frameworks are distributed via Carthage and Cocoapods.</p>
+
+<p>All frameworks are available for:</p>
+
+<ul>
+<li>iOS 9.0+</li>
+<li>macOS 10.11+</li>
+<li>tvOS 9.0+</li>
+<li>watchOS 2.0+</li>
+</ul>
+<h3 id='cocoapods' class='heading'>COCOAPODS</h3>
+
+<p><a href="http://cocoapods.org">CocoaPods</a> is a dependency manager for Cocoa projects. You can install it with the following command:</p>
+<pre class="highlight shell"><code><span class="gp">$ </span>gem install cocoapods
+</code></pre>
+
+<p>To integrate Virgil E3Kit into your Xcode project using CocoaPods, specify it in your <em>Podfile</em>:</p>
+<pre class="highlight shell"><code>target <span class="s1">'&lt;Your Target Name&gt;'</span> <span class="k">do
+    </span>use_frameworks!
+
+    pod <span class="s1">'VirgilE3Kit'</span>, <span class="s1">'~&gt; 0.7.0-beta4'</span>
+end
+</code></pre>
+
+<p>Then, run the following command:</p>
+<pre class="highlight shell"><code><span class="gp">$ </span>pod install
+</code></pre>
+<h3 id='carthage' class='heading'>Carthage</h3>
+
+<p><a href="https://github.com/Carthage/Carthage">Carthage</a> is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.</p>
+
+<p>You can install Carthage with <a href="http://brew.sh/">Homebrew</a> using the following command:</p>
+<pre class="highlight shell"><code><span class="gp">$ </span>brew update
+<span class="gp">$ </span>brew install carthage
+</code></pre>
+
+<p>To integrate VirgilE3Kit into your Xcode project using Carthage, create an empty file with name <em>Cartfile</em> in your project&rsquo;s root folder and add following lines to your <em>Cartfile</em></p>
+<pre class="highlight plaintext"><code>github "VirgilSecurity/virgil-e3kit-x" ~&gt; 0.7.0-beta4
+</code></pre>
+<h4 id='linking-against-prebuilt-binaries' class='heading'>Linking against prebuilt binaries</h4>
+
+<p>To link prebuilt frameworks to your app, run following command:</p>
+<pre class="highlight shell"><code><span class="gp">$ </span>carthage update
+</code></pre>
+
+<p>This will build each dependency or download a pre-compiled framework from github Releases.</p>
+<h5 id='building-for-ios-tvos-watchos' class='heading'>Building for iOS/tvOS/watchOS</h5>
+
+<p>On your application targets’ “General” settings tab, in the “Linked Frameworks and Libraries” section, add following frameworks from the <em>Carthage/Build</em> folder inside your project&rsquo;s folder:</p>
+
+<ul>
+<li>VirgilE3Kit</li>
+<li>VirgilPythiaSDK</li>
+<li>VirgilSDK</li>
+<li>VirgilCrypto</li>
+<li>VirgilCryptoFoundation</li>
+<li>VirgilCryptoPythia</li>
+<li>VSCCommon</li>
+<li>VSCFoundation</li>
+<li>VSCPythia</li>
+</ul>
+
+<p>On your application targets’ “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase.” Create a Run Script in which you specify your shell (ex: <em>/bin/sh</em>), add the following contents to the script area below the shell:</p>
+<pre class="highlight shell"><code>/usr/local/bin/carthage copy-frameworks
+</code></pre>
+
+<p>and add the paths to the frameworks you want to use under “Input Files”, e.g.:</p>
+<pre class="highlight plaintext"><code>$(SRCROOT)/Carthage/Build/iOS/VirgilE3Kit.framework
+$(SRCROOT)/Carthage/Build/iOS/VirgilPythiaSDK.framework
+$(SRCROOT)/Carthage/Build/iOS/VirgilSDK.framework
+$(SRCROOT)/Carthage/Build/iOS/VirgilCrypto.framework
+$(SRCROOT)/Carthage/Build/iOS/VirgilCryptoFoundation.framework
+$(SRCROOT)/Carthage/Build/iOS/VirgilCryptoPythia.framework
+$(SRCROOT)/Carthage/Build/iOS/VSCCommon.framework
+$(SRCROOT)/Carthage/Build/iOS/VSCFoundation.framework
+$(SRCROOT)/Carthage/Build/iOS/VSCPythia.framework
+</code></pre>
+<h5 id='building-for-macos' class='heading'>Building for macOS</h5>
+
+<p>On your application target&rsquo;s “General” settings tab, in the “Embedded Binaries” section, drag and drop following frameworks from the Carthage/Build folder on disk:</p>
+
+<ul>
+<li>VirgilE3Kit</li>
+<li>VirgilPythiaSDK</li>
+<li>VirgilSDK</li>
+<li>VirgilCrypto</li>
+<li>VirgilCryptoFoundation</li>
+<li>VirgilCryptoPythia</li>
+<li>VSCCommon</li>
+<li>VSCFoundation</li>
+<li>VSCPythia</li>
+</ul>
+
+<p>Additionally, you&rsquo;ll need to copy debug symbols for debugging and crash reporting on macOS.</p>
+
+<p>On your application target’s “Build Phases” settings tab, click the “+” icon and choose “New Copy Files Phase”.
+Click the “Destination” drop-down menu and select “Products Directory”. For each framework, drag and drop corresponding dSYM file.</p>
+<h2 id='usage-examples' class='heading'>Usage Examples</h2>
+<h4 id='register-user' class='heading'>Register user</h4>
+
+<p>Use the following lines of code to authenticate user.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">VirgilE3Kit</span>
+
+<span class="c1">// initialize E3Kit</span>
+<span class="k">let</span> <span class="nv">eThree</span> <span class="o">=</span> <span class="k">try!</span> <span class="kt">EThree</span><span class="p">(</span><span class="nv">identity</span><span class="p">:</span> <span class="s">"Bob"</span><span class="p">,</span> <span class="nv">tokenCallback</span><span class="p">:</span> <span class="n">tokenCallback</span><span class="p">)</span>
+
+<span class="n">eThree</span><span class="o">.</span><span class="n">register</span> <span class="p">{</span> <span class="n">error</span> <span class="k">in</span> 
+    <span class="c1">// done</span>
+<span class="p">}</span>
+</code></pre>
+<h4 id='encrypt-amp-decrypt' class='heading'>Encrypt &amp; decrypt</h4>
+
+<p>Virgil E3Kit lets you use a user&rsquo;s Private key and his or her Card to sign, then encrypt text.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">VirgilE3Kit</span>
+
+<span class="c1">// TODO: init and register user (see Register User)</span>
+
+<span class="c1">// prepare a message</span>
+<span class="k">let</span> <span class="nv">messageToEncrypt</span> <span class="o">=</span> <span class="s">"Hello, Alice and Den!"</span>
+
+<span class="c1">// Search user's Cards to encrypt for</span>
+<span class="n">eThree</span><span class="o">!.</span><span class="nf">findUsers</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="p">[</span><span class="s">"Alice"</span><span class="p">,</span> <span class="s">"Den"</span><span class="p">])</span> <span class="p">{</span> <span class="n">users</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span> 
+    <span class="k">guard</span> <span class="k">let</span> <span class="nv">users</span> <span class="o">=</span> <span class="n">users</span><span class="p">,</span> <span class="n">error</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// Error handling here</span>
+    <span class="p">}</span>
+
+    <span class="c1">// encrypt text</span>
+    <span class="k">let</span> <span class="nv">encryptedMessage</span> <span class="o">=</span> <span class="k">try!</span> <span class="n">eThree</span><span class="o">.</span><span class="nf">encrypt</span><span class="p">(</span><span class="n">messageToEncrypt</span><span class="p">,</span> <span class="nv">for</span><span class="p">:</span> <span class="n">users</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>Decrypt and verify the signed &amp; encrypted data using sender&rsquo;s public key and receiver&rsquo;s private key:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">VirgilE3Kit</span>
+
+<span class="c1">// TODO: init and register user (see Register User)</span>
+
+<span class="c1">// Find user</span>
+<span class="n">eThree</span><span class="o">.</span><span class="nf">findUsers</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="p">[</span><span class="n">bobUID</span><span class="p">])</span> <span class="p">{</span> <span class="n">users</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
+    <span class="k">guard</span> <span class="k">let</span> <span class="nv">users</span> <span class="o">=</span> <span class="n">users</span><span class="p">,</span> <span class="n">error</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// Error handling here</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Decrypt text and verify if it was really written by Bob</span>
+    <span class="k">let</span> <span class="nv">originText</span> <span class="o">=</span> <span class="k">try!</span> <span class="n">eThree</span><span class="o">.</span><span class="nf">decrypt</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="n">encryptedText</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="n">users</span><span class="p">[</span><span class="n">bobUID</span><span class="p">]</span><span class="o">!</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<h4 id='encrypt-amp-decrypt-large-files' class='heading'>Encrypt &amp; decrypt large files</h4>
+
+<p>If the data that needs to be encrypted is too large for your RAM to encrypt all at once, use the following snippets to encrypt and decrypt streams.</p>
+
+<p>Encryption:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">VirgilE3Kit</span>
+
+<span class="c1">// TODO: init and register user (see Register User)</span>
+<span class="c1">// TODO: Get users UIDs</span>
+
+<span class="k">let</span> <span class="nv">usersToEncryptTo</span> <span class="o">=</span> <span class="p">[</span><span class="n">user1UID</span><span class="p">,</span> <span class="n">user2UID</span><span class="p">,</span> <span class="n">user3UID</span><span class="p">]</span>
+
+<span class="c1">// Find users</span>
+<span class="n">eThree</span><span class="o">.</span><span class="nf">findUsers</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="n">usersToEncryptTo</span><span class="p">)</span> <span class="p">{</span> <span class="n">users</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
+    <span class="k">guard</span> <span class="k">let</span> <span class="nv">users</span> <span class="o">=</span> <span class="n">users</span><span class="p">,</span> <span class="n">error</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// Error handling here</span>
+    <span class="p">}</span>
+
+    <span class="k">let</span> <span class="nv">fileURL</span> <span class="o">=</span> <span class="kt">Bundle</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="nf">url</span><span class="p">(</span><span class="nv">forResource</span><span class="p">:</span> <span class="s">"data"</span><span class="p">,</span> <span class="nv">withExtension</span><span class="p">:</span> <span class="s">"txt"</span><span class="p">)</span><span class="o">!</span>
+    <span class="k">let</span> <span class="nv">inputStream</span> <span class="o">=</span> <span class="kt">InputStream</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="n">fileURL</span><span class="p">)</span><span class="o">!</span>
+    <span class="k">let</span> <span class="nv">outputStream</span> <span class="o">=</span> <span class="kt">OutputStream</span><span class="o">.</span><span class="nf">toMemory</span><span class="p">()</span>
+
+    <span class="k">try</span> <span class="n">eThree</span><span class="o">.</span><span class="nf">encrypt</span><span class="p">(</span><span class="n">inputStream</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span> <span class="n">outputStream</span><span class="p">,</span> <span class="nv">for</span><span class="p">:</span> <span class="n">users</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>Decryption:</p>
+
+<blockquote>
+<p>Stream encryption doesn’t sign the data. This is why decryption doesn’t need Card for verification unlike the general data decryption.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">VirgilE3Kit</span>
+</code></pre>
+</blockquote>
+
+<p>// TODO: init and register user (see Register User)</p>
+
+<p>let outputStream = OutputStream.toMemory()</p>
+
+<p>try eThree.decrypt(encryptedStream, to: outputStream)</p>
+<pre class="highlight plaintext"><code>
+## Enable Group Chat
+In this section, you'll find out how to build a group chat using the Virgil E3Kit.
+
+We assume that your users have installed and initialized the E3Kit, and used snippet above to register.
+
+
+#### Create group chat
+Let's imagine Alice wants to start a group chat with Bob and Carol. First, Alice creates a new group ticket by running the `createGroup` feature and the E3Kit stores the ticket on the Virgil Cloud. This ticket holds a shared root key for future group encryption.
+
+Alice has to specify a unique `identifier` of group with length &gt; 10 and `findUsersResult` of participants. We recommend tying this identifier to your unique transport channel id.
+```swift 
+ethree.createGroup(id: groupId, with: users) { error in 
+    guard error == nil else {
+        // Error handling
+    }
+    // Group created and saved locally!
+}
+</code></pre>
+<h4 id='start-group-chat-session' class='heading'>Start group chat session</h4>
+
+<p>Now, other participants, Bob and Carol, want to join the Alice&rsquo;s group and have to start the group session by loading the group ticket using the <code>loadGroup</code> method. This function requires specifying the group <code>identifier</code> and group initiator&rsquo;s Card.</p>
+<pre class="highlight swift"><code><span class="n">ethree</span><span class="o">.</span><span class="nf">loadGroup</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="n">groupId</span><span class="p">,</span> <span class="nv">initiator</span><span class="p">:</span> <span class="n">findUsersResult</span><span class="p">[</span><span class="s">"Alice"</span><span class="p">]</span><span class="o">!</span><span class="p">)</span> <span class="p">{</span> <span class="n">group</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span> 
+    <span class="k">guard</span> <span class="k">let</span> <span class="nv">group</span> <span class="o">=</span> <span class="n">group</span><span class="p">,</span> <span class="n">error</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">else</span> 
+        <span class="c1">// Error handling</span>
+    <span class="p">}</span>
+    <span class="c1">// Group loaded and saved locally! </span>
+<span class="p">}</span>
+</code></pre>
+
+<p>Use the loadGroup method to load and save group locally. Then, you can use the getGroup method to retrieve group instance from local storage.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">group</span> <span class="o">=</span> <span class="k">try!</span> <span class="n">ethree</span><span class="o">.</span><span class="nf">getGroup</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="n">groupId</span><span class="p">)</span>
+</code></pre>
+<h4 id='encrypt-and-decrypt-messages' class='heading'>Encrypt and decrypt messages</h4>
+
+<p>To encrypt and decrypt messages, use the <code>encrypt</code> and <code>decrypt</code> E3Kit functions, which allows you to work with data and strings.</p>
+
+<p>Use the following code-snippets to encrypt messages:</p>
+<pre class="highlight swift"><code><span class="c1">// prepare a message</span>
+<span class="k">let</span> <span class="nv">messageToEncrypt</span> <span class="o">=</span> <span class="s">"Hello, Bob and Carol!"</span>
+
+<span class="k">let</span> <span class="nv">encrypted</span> <span class="o">=</span> <span class="k">try!</span> <span class="n">group</span><span class="o">.</span><span class="nf">encrypt</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="n">messageToEncrypt</span><span class="p">)</span>
+</code></pre>
+
+<p>Use the following code-snippets to decrypt messages:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">decrypted</span> <span class="o">=</span> <span class="k">try!</span> <span class="n">group</span><span class="o">.</span><span class="nf">decrypt</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="n">encrypted</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="n">findUsersResult</span><span class="p">[</span><span class="s">"Alice"</span><span class="p">]</span><span class="o">!</span><span class="p">)</span>
+</code></pre>
+
+<p>At the decrypt step, you also use <code>findUsers</code> method to verify that the message hasn&rsquo;t been tempered with.</p>
+<h3 id='manage-group-chat' class='heading'>Manage group chat</h3>
+
+<p>E3Kit also allows you to perform other operations, like participants management, while you work with group chat. In this version of E3Kit only group initiator can change participants or delete group.</p>
+<h4 id='add-new-participant' class='heading'>Add new participant</h4>
+
+<p>To add a new chat member, the chat owner has to use the <code>add</code> method and specify the new member&rsquo;s Card. New member will be able to decrypt all previous messages history.</p>
+<pre class="highlight swift"><code><span class="n">group</span><span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="nv">participant</span><span class="p">:</span> <span class="n">users</span><span class="p">[</span><span class="s">"Den"</span><span class="p">]</span><span class="o">!</span><span class="p">)</span> <span class="p">{</span> <span class="n">error</span> <span class="k">in</span> 
+    <span class="k">guard</span> <span class="n">error</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// Error handling</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Den was added!</span>
+<span class="p">}</span>
+</code></pre>
+<h4 id='remove-participant' class='heading'>Remove participant</h4>
+
+<p>To remove participant, group owner has to use the <code>remove</code> method and specify the member&rsquo;s Card. Removed participants won&rsquo;t be able to load or update this group.</p>
+<pre class="highlight swift"><code><span class="n">group</span><span class="o">.</span><span class="nf">remove</span><span class="p">(</span><span class="nv">participant</span><span class="p">:</span> <span class="n">users</span><span class="p">[</span><span class="s">"Den"</span><span class="p">]</span><span class="o">!</span><span class="p">)</span> <span class="p">{</span> <span class="n">error</span> <span class="k">in</span> 
+    <span class="k">guard</span> <span class="n">error</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// Error handling</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Den was removed!</span>
+<span class="p">}</span>
+</code></pre>
+<h4 id='update-group-chat' class='heading'>Update group chat</h4>
+
+<p>In the event of changes in your group, i.e. adding a new participant, or deleting an existing one, each group chat participant has to update the encryption key by calling the <code>update</code> E3Kit method or reloading Group by <code>loadGroup</code>.</p>
+<pre class="highlight swift"><code><span class="n">group</span><span class="o">.</span><span class="n">update</span> <span class="p">{</span> <span class="n">error</span> <span class="k">in</span> 
+    <span class="k">guard</span> <span class="n">error</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// Error handling</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Group updated!</span>
+<span class="p">}</span>
+</code></pre>
+<h4 id='delete-group-chat' class='heading'>Delete group chat</h4>
+
+<p>To delete a group, the owner has to use the <code>deleteGroup</code> method and specify the group <code>identifier</code>.</p>
+<pre class="highlight swift"><code>
+<span class="n">ethree</span><span class="o">.</span><span class="nf">deleteGroup</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="n">groupId</span><span class="p">)</span> <span class="p">{</span> <span class="n">error</span> <span class="k">in</span>
+    <span class="k">guard</span> <span class="n">error</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// Error handling</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Group was deleted!</span>
+<span class="p">}</span>
+</code></pre>
+<h2 id='samples' class='heading'>Samples</h2>
+
+<p>You can find the code samples for Objective-C/Swift here:</p>
+
+<table><thead>
+<tr>
+<th>Sample type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/VirgilSecurity/demo-e3kit-ios"><code>iOS Demo</code></a></td>
+</tr>
+</tbody></table>
+
+<p>You can run the demo to check out the example of how to initialize the SDK, register users and encrypt messages using the E3Kit.</p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>This library is released under the <a href="LICENSE">3-clause BSD License</a>.</p>
+<h2 id='support' class='heading'>Support</h2>
+
+<p>Our developer support team is here to help you. Find out more information on our <a href="https://help.virgilsecurity.com/">Help Center</a>.</p>
+
+<p>You can find us on <a href="https://twitter.com/VirgilSecurity">Twitter</a> or send us email <a href="mailto:support@VirgilSecurity.com">support@VirgilSecurity.com</a>.</p>
+
+<p>Also, get extra help from our support team on <a href="https://virgilsecurity.com/join-community">Slack</a>.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://virgilsecurity.com/" target="_blank" rel="external">Virgil Security</a>. All rights reserved. (Last updated: 2019-08-22)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.10.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

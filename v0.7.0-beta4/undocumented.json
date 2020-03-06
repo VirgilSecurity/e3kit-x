@@ -1,0 +1,229 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThreeError.swift",
+      "line": 52,
+      "symbol": "EThreeError.verifierInitFailed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThreeError.swift",
+      "line": 53,
+      "symbol": "EThreeError.strToDataFailed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThreeError.swift",
+      "line": 54,
+      "symbol": "EThreeError.strFromDataFailed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThreeError.swift",
+      "line": 55,
+      "symbol": "EThreeError.missingPrivateKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThreeError.swift",
+      "line": 56,
+      "symbol": "EThreeError.missingPublicKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThreeError.swift",
+      "line": 57,
+      "symbol": "EThreeError.missingIdentities",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThreeError.swift",
+      "line": 58,
+      "symbol": "EThreeError.userIsAlreadyRegistered",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThreeError.swift",
+      "line": 59,
+      "symbol": "EThreeError.userIsNotRegistered",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThreeError.swift",
+      "line": 60,
+      "symbol": "EThreeError.privateKeyExists",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThreeError.swift",
+      "line": 61,
+      "symbol": "EThreeError.verificationFailed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThreeError.swift",
+      "line": 62,
+      "symbol": "EThreeError.wrongPassword",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Managers/FindUsersError.swift",
+      "line": 45,
+      "symbol": "FindUsersError.duplicateCards",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Managers/FindUsersError.swift",
+      "line": 46,
+      "symbol": "FindUsersError.missingCachedCard",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Managers/FindUsersError.swift",
+      "line": 47,
+      "symbol": "FindUsersError.cardWasNotFound",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Models/Group/GroupError.swift",
+      "line": 54,
+      "symbol": "GroupError.missingCachedGroup",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Models/Group/GroupError.swift",
+      "line": 55,
+      "symbol": "GroupError.groupPermissionDenied",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Models/Group/GroupError.swift",
+      "line": 56,
+      "symbol": "GroupError.groupWasNotFound",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Models/Group/GroupError.swift",
+      "line": 57,
+      "symbol": "GroupError.invalidGroup",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Models/Group/GroupError.swift",
+      "line": 58,
+      "symbol": "GroupError.invalidChangeParticipants",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Models/Group/GroupError.swift",
+      "line": 59,
+      "symbol": "GroupError.invalidParticipantsCount",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Models/Group/GroupError.swift",
+      "line": 60,
+      "symbol": "GroupError.verificationFailed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Models/Group/GroupError.swift",
+      "line": 61,
+      "symbol": "GroupError.shortGroupId",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Models/Group/GroupError.swift",
+      "line": 62,
+      "symbol": "GroupError.messageNotFromThisGroup",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Models/Group/GroupError.swift",
+      "line": 63,
+      "symbol": "GroupError.groupIsOutdated",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Models/Group/GroupError.swift",
+      "line": 64,
+      "symbol": "GroupError.inconsistentState",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Models/RawGroup.swift",
+      "line": 43,
+      "symbol": "RawGroupError.emptyTickets",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Storages/Local/FileGroupStorage.swift",
+      "line": 45,
+      "symbol": "FileGroupStorageError.invalidFileName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Storages/Local/FileGroupStorage.swift",
+      "line": 46,
+      "symbol": "FileGroupStorageError.emptyFile",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Storages/Local/SQLite/BuiltInTypesSQLiteExtension.swift",
+      "line": 44,
+      "symbol": "SQLiteBindingError.invalidString",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Storages/Local/SQLite/SQLiteCardStorage.swift",
+      "line": 45,
+      "symbol": "SQLiteCardStorageError.inconsistentDb",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Storages/Local/SQLite/SQLiteCardStorage.swift",
+      "line": 46,
+      "symbol": "SQLiteCardStorageError.emptyIdentities",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/Storages/Local/SQLite/SQLiteDB.swift",
+      "line": 45,
+      "symbol": "SQLiteError.errorNum",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x"
+}

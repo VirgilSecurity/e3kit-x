@@ -1,0 +1,75 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThree.swift",
+      "line": 54,
+      "symbol": "EThreeError.verifierInitFailed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThree.swift",
+      "line": 55,
+      "symbol": "EThreeError.keyIsNotVirgil",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThree.swift",
+      "line": 56,
+      "symbol": "EThreeError.strToDataFailed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThree.swift",
+      "line": 57,
+      "symbol": "EThreeError.strFromDataFailed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThree.swift",
+      "line": 58,
+      "symbol": "EThreeError.missingPrivateKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThree.swift",
+      "line": 59,
+      "symbol": "EThreeError.missingPublicKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThree.swift",
+      "line": 60,
+      "symbol": "EThreeError.missingIdentities",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThree.swift",
+      "line": 61,
+      "symbol": "EThreeError.userIsAlreadyRegistered",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThree.swift",
+      "line": 62,
+      "symbol": "EThreeError.userIsNotRegistered",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x/Source/EThree.swift",
+      "line": 63,
+      "symbol": "EThreeError.privateKeyExists",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/travis/build/VirgilSecurity/virgil-e3kit-x"
+}

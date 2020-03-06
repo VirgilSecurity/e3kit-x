@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GroupError Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/GroupError" class="dashAnchor"></a>
+    <a title="GroupError Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">VirgilE3Kit Docs</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">VirgilE3Kit Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        GroupError Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Defaults.html">Defaults</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DerivedPasswords.html">DerivedPasswords</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EThree.html">EThree</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EThreeParams.html">EThreeParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EThreeParams/ServiceUrls.html">– ServiceUrls</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Group.html">Group</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RatchetChannel.html">RatchetChannel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SQLiteError.html">SQLiteError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TemporaryChannel.html">TemporaryChannel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/EThreeError.html">EThreeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EThreeParamsError.html">EThreeParamsError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EThreeRatchetError.html">EThreeRatchetError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FileGroupStorageError.html">FileGroupStorageError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FindUsersError.html">FindUsersError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GroupError.html">GroupError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RawGroupError.html">RawGroupError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SQLiteBindingError.html">SQLiteBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SQLiteCardStorageError.html">SQLiteCardStorageError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TemporaryChannelError.html">TemporaryChannelError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ChangedKeyDelegate.html">ChangedKeyDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:11VirgilE3Kit15FindUsersResulta">FindUsersResult</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>GroupError</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@objc(VTEEGroupError)</span>
+<span class="kd">public</span> <span class="kd">enum</span> <span class="kt">GroupError</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="kt">LocalizedError</span></code></pre>
+
+                </div>
+              </div>
+            <p>Declares error types and codes for Group</p>
+
+<ul>
+<li>missingCachedGroup: Group with provided id not found locally. Try to call loadGroup first</li>
+<li>groupPermissionDenied: Only group initiator can do changed on group</li>
+<li>groupWasNotFound: Group with provided id was not found</li>
+<li>invalidGroup: Group is invalid</li>
+<li>invalidChangeParticipants: Invalid change of group participants.
+                         e.g. Add smb who is already in group or remove smb who is not</li>
+<li>invalidParticipantsCount: Please check valid participants count range in Group.ValidParticipantsCountRange</li>
+<li>verificationFailed: Verification of message failed. This may be caused by rotating sender key. Try finding new one</li>
+<li>shortGroupId: Group Id length should be &gt; 10</li>
+<li>messageNotFromThisGroup: Message was encrypted in group with different identifier</li>
+<li>groupIsOutdated: Group is not up to date. Call update or loadGroup</li>
+<li>inconsistentState: Inconsistent state</li>
+</ul>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorMissingCachedGroup"></a>
+                    <a name="//apple_ref/swift/Element/missingCachedGroup" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorMissingCachedGroup">missingCachedGroup</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">missingCachedGroup</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorGroupPermissionDenied"></a>
+                    <a name="//apple_ref/swift/Element/groupPermissionDenied" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorGroupPermissionDenied">groupPermissionDenied</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">groupPermissionDenied</span> <span class="o">=</span> <span class="mi">2</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorGroupWasNotFound"></a>
+                    <a name="//apple_ref/swift/Element/groupWasNotFound" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorGroupWasNotFound">groupWasNotFound</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">groupWasNotFound</span> <span class="o">=</span> <span class="mi">3</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorInvalidGroup"></a>
+                    <a name="//apple_ref/swift/Element/invalidGroup" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorInvalidGroup">invalidGroup</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">invalidGroup</span> <span class="o">=</span> <span class="mi">4</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorInvalidChangeParticipants"></a>
+                    <a name="//apple_ref/swift/Element/invalidChangeParticipants" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorInvalidChangeParticipants">invalidChangeParticipants</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">invalidChangeParticipants</span> <span class="o">=</span> <span class="mi">5</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorInvalidParticipantsCount"></a>
+                    <a name="//apple_ref/swift/Element/invalidParticipantsCount" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorInvalidParticipantsCount">invalidParticipantsCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">invalidParticipantsCount</span> <span class="o">=</span> <span class="mi">6</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorVerificationFailed"></a>
+                    <a name="//apple_ref/swift/Element/verificationFailed" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorVerificationFailed">verificationFailed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">verificationFailed</span> <span class="o">=</span> <span class="mi">7</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorShortGroupId"></a>
+                    <a name="//apple_ref/swift/Element/shortGroupId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorShortGroupId">shortGroupId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">shortGroupId</span> <span class="o">=</span> <span class="mi">8</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorMessageNotFromThisGroup"></a>
+                    <a name="//apple_ref/swift/Element/messageNotFromThisGroup" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorMessageNotFromThisGroup">messageNotFromThisGroup</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">messageNotFromThisGroup</span> <span class="o">=</span> <span class="mi">9</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorGroupIsOutdated"></a>
+                    <a name="//apple_ref/swift/Element/groupIsOutdated" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorGroupIsOutdated">groupIsOutdated</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">groupIsOutdated</span> <span class="o">=</span> <span class="mi">10</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorInconsistentState"></a>
+                    <a name="//apple_ref/swift/Element/inconsistentState" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirgilE3Kit@E@VTEEGroupError@VTEEGroupErrorInconsistentState">inconsistentState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">inconsistentState</span> <span class="o">=</span> <span class="mi">11</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11VirgilE3Kit10GroupErrorO16errorDescriptionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/errorDescription" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11VirgilE3Kit10GroupErrorO16errorDescriptionSSSgvp">errorDescription</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Human-readable localized description</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">errorDescription</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://virgilsecurity.com/" target="_blank" rel="external">Virgil Security</a>. All rights reserved. (Last updated: 2020-03-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
