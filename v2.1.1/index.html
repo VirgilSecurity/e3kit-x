@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VirgilE3Kit  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="VirgilE3Kit  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">VirgilE3Kit 2.1.1 Docs</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">VirgilE3Kit Reference</a>
+        <img id="carat" src="img/carat.png" />
+        VirgilE3Kit  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/Defaults.html">Defaults</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DerivedPasswords.html">DerivedPasswords</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EThree.html">EThree</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EThreeParams.html">EThreeParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EThreeParams/ServiceUrls.html">– ServiceUrls</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Group.html">Group</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/RatchetChannel.html">RatchetChannel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SQLiteError.html">SQLiteError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TemporaryChannel.html">TemporaryChannel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/EThreeError.html">EThreeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EThreeParamsError.html">EThreeParamsError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/EThreeRatchetError.html">EThreeRatchetError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FileGroupStorageError.html">FileGroupStorageError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/FindUsersError.html">FindUsersError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/GroupError.html">GroupError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/RawGroupError.html">RawGroupError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SQLiteBindingError.html">SQLiteBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SQLiteCardStorageError.html">SQLiteCardStorageError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TemporaryChannelError.html">TemporaryChannelError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/ChangedKeyDelegate.html">ChangedKeyDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:11VirgilE3Kit15FindUsersResulta">FindUsersResult</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='virgil-e3kit-objective-c-swift' class='heading'>Virgil E3Kit Objective-C/Swift</h1>
+
+<p><a href="https://travis-ci.com/VirgilSecurity/virgil-e3kit-x"><img src="https://api.travis-ci.com/VirgilSecurity/virgil-e3kit-x.svg?branch=master" alt="Build Status"></a>
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a>
+<a href="https://cocoapods.org/pods/VirgilE3Kit"><img src="https://img.shields.io/cocoapods/v/VirgilE3Kit.svg" alt="CocoaPods Compatible"></a>
+<a href="https://cocoapods.org/pods/VirgilE3Kit"><img src="https://img.shields.io/cocoapods/p/VirgilE3Kit.svg?style=flat" alt="Platform"></a>
+<a href="https://github.com/VirgilSecurity/virgil/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-BSD%203--Clause-blue.svg" alt="GitHub license"></a>
+<a href="https://virgilsecurity.github.io/virgil-e3kit-x/"><img src="https://img.shields.io/badge/API%20reference-e3kit--x-green" alt="API Reference"></a></p>
+
+<p><a href="#introduction">Introduction</a> | <a href="#benefits">Benefits</a> | <a href="#features">Features</a> | <a href="#installation">Installation</a> | <a href="#resources">Resources</a> | <a href="#samples">Samples</a> | <a href="#license">License</a> | <a href="#support">Support</a></p>
+<h2 id='introduction' class='heading'>Introduction</h2>
+
+<p><a href="https://virgilsecurity.com/e3kit/"><img width="100px" src="https://cdn.virgilsecurity.com/assets/images/github/logos/e3kit/E3Kit.png" align="left" hspace="10" vspace="6"></a> <a href="https://virgilsecurity.com">Virgil Security</a> provides <a href="https://virgilsecurity.com/e3kit/">Virgil E3Kit</a> - an open-source client-side framework that allows developers to add end-to-end encryption to their messaging applications, file sharing programs, and other digital communication products in just a few simple steps to become HIPAA and GDPR compliant and more.</p>
+<h2 id='benefits' class='heading'>Benefits</h2>
+
+<ul>
+<li>Easy to setup and integrate into new or existing projects</li>
+<li>Compatible with any CPaaS provider, including Nexmo, Firebase, Twilio, PubNub and etc.</li>
+<li>Strong secret keys storage, integration with Keychain</li>
+<li>Provides GDPR and HIPAA compliance</li>
+<li>Immune to quantum computers attacks</li>
+</ul>
+<h2 id='features' class='heading'>Features</h2>
+
+<ul>
+<li>Strong one-to-one and group encryption</li>
+<li>Files and stream end-to-end encryption</li>
+<li>Data signature and verification as part of the encrypt and decrypt functions</li>
+<li>Recoverable private encryption keys</li>
+<li>Access to encrypted data from multiple user devices</li>
+<li>Perfect forward secrecy with the Double Ratchet algorithm</li>
+<li>Encryption for unregistered users</li>
+<li>Post-quantum algorithms support: <a href="https://round5.org/">Round5</a> (encryption), <a href="https://falcon-sign.info/">Falcon</a> (signature)</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>Navigate to <a href="https://developer.virgilsecurity.com/docs/e3kit/get-started/setup-client/">Developer Documentation</a> to install and initialize Virgil E3Kit.</p>
+<h2 id='resources' class='heading'>Resources</h2>
+
+<ul>
+<li><a href="https://virgilsecurity.com/e3kit/">E3Kit Product Page</a></li>
+<li><a href="https://developer.virgilsecurity.com/docs/e3kit/">E3Kit Documentation</a> - start integrating E3Kit into your project with our detailed guides.</li>
+<li><a href="https://virgilsecurity.github.io/virgil-e3kit-x/">E3Kit Objective-C/Swift API Reference</a> - E3Kit API reference for the language of your choice.</li>
+<li><a href="https://developer.virgilsecurity.com/docs/e3kit/get-started/quickstart/">Quickstart Demo</a> - will help you to get started with the Virgil E3Kit quickly, and to learn some common ways to build end-to-end encryption between two fictional characters Alice and Bob.</li>
+</ul>
+<h2 id='samples' class='heading'>Samples</h2>
+
+<p>You can find the code samples for Objective-C/Swift here:</p>
+
+<table><thead>
+<tr>
+<th>Sample type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/VirgilSecurity/demo-e3kit-ios"><code>iOS Demo</code></a></td>
+</tr>
+</tbody></table>
+
+<p>You can run the demo to see how to initialize the SDK, register users and encrypt messages using E3Kit.</p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>This library is released under the <a href="LICENSE">3-clause BSD License</a>.</p>
+<h2 id='support' class='heading'>Support</h2>
+
+<p>Our developer support team is here to help you. Find out more information on our <a href="https://help.virgilsecurity.com/">Help Center</a>.</p>
+
+<p>You can find us on <a href="https://twitter.com/VirgilSecurity">Twitter</a> or send us email <a href="mailto:support@VirgilSecurity.com">support@VirgilSecurity.com</a>.</p>
+
+<p>Also, get extra help from our support team on <a href="https://virgilsecurity.com/join-community">Slack</a>.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://virgilsecurity.com/" target="_blank" rel="external">Virgil Security</a>. All rights reserved. (Last updated: 2020-05-27)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
